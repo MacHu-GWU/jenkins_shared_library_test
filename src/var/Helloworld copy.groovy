@@ -1,7 +1,4 @@
-def call(
-    firstName = "Obama",
-    lastName = "Barrack"
-) {
+def call() {
     String message = "Hello " + firstName + " " + lastname + "!"
     pipeline {
         //This is where we request a build agent from Jenkins.
