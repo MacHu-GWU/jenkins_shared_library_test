@@ -1,3 +1,9 @@
+package ise
+
+def c = ise.Helloworld()
+
+c.call()
+
 pipeline {
     agent {
         node {
@@ -9,8 +15,9 @@ pipeline {
             steps {
                 script {
                     sh """
-                        which aws
-                        aws s3 ls
+                        git clone https://github.com/MacHu-GWU/jenkins_shared_library_test.git
+                        cd jenkins_shared_library_test
+                        
                     """
                 }
             }
