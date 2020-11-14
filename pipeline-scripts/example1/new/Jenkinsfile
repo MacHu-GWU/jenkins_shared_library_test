@@ -5,7 +5,7 @@ pipeline {
         }
     }
     stages {
-        example1 {}
+        example1SayHello {}
         stage("build") {
             steps {
                 script {
