@@ -1,12 +1,10 @@
 def call() {
-    node {
-        stage("say Hello") {
-            steps {
-                script {
-                    sh """
-                        echo "Hello World!"
-                    """
-                }
+    stage("say Hello") {
+        steps {
+            script {
+                sh """
+                    echo "Hello World!"
+                """
             }
         }
     }
