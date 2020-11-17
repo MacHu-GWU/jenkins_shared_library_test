@@ -4,34 +4,5 @@ pipeline {
             label ""
         }
     }
-    stages {
-        example1SayHello {}
-        stage("build") {
-            steps {
-                script {
-                    sh """
-                        echo "do build"
-                    """
-                }
-            }
-        }
-        stage("test") {
-            steps {
-                script {
-                    sh """
-                        echo "do test"
-                    """
-                }
-            }
-        }
-        stage("deploy") {
-            steps {
-                script {
-                    sh """
-                        echo "do deploy"
-                    """
-                }
-            }
-        }
-    }
+    example1 {}
 }
