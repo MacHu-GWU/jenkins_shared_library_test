@@ -5,23 +5,9 @@ pipeline {
         }
     }
     stages {
-        stage("say hello") {
+        stage("Hello World") {
             steps {
-                script {
-                    sh """
-                        echo "Hello World!"
-                    """
-                }
-            }
-        }
-        example2 {}
-        stage("post deploy") {
-            steps {
-                script {
-                    sh """
-                        echo "post deploy"
-                    """
-                }
+                example "hi"
             }
         }
     }
