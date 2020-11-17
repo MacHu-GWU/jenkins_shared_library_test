@@ -24,5 +24,5 @@ At the end of official doc https://www.jenkins.io/doc/book/pipeline/shared-libra
 
 If you really want to write a shared library for resuable stages, you have two option:
 
-1. Write a Highlevel Pipeline Script, and use Disclosure to injecting customize code block into it. See example 6.
+1. Write a Highlevel Pipeline Script, and use Disclosure to injecting customize code block into it. See example 3.
 2. Only include code block inside of ``steps { ... }`` (DO NOT INCLUDE ``steps``), put valid ``step`` derivative like ``script`` in your ``call()`` function. And reference the library name inside of ``steps { ... }``
