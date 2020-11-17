@@ -6,7 +6,7 @@ node {
         sh "echo test"
     }
     stage("Deploy") {
-        sh "echo publish"
+        sh "echo deploy"
     }
     stage("post deploy") {
         sh "echo post deploy"

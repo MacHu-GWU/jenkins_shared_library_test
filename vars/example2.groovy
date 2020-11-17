@@ -1,5 +1,5 @@
 def call() {
-    stages {
+    pipeline {
         stage("Build") {
             sh "echo install"
         }

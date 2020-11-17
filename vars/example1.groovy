@@ -7,7 +7,7 @@ def call(Closure body) {
             sh "echo test"
         }
         stage("Deploy") {
-            sh "echo publish"
+            sh "echo deploy"
         }
         body()
     }
