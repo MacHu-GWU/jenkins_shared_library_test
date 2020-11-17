@@ -1,7 +1,7 @@
 node {
-    example1 {
-        stage("post deploy") {
-            sh "echo post deploy"
+    stage("Hello World") {
+        example1 {
+            name = "Bob"
         }
     }
 }
