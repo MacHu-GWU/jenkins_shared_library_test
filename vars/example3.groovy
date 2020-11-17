@@ -1,11 +1,22 @@
-def call(Closure postscript) {
-    steps {
-        script {
-            sh """
-                echo Hello
-            """
+def call(Closure postHelloScript) {
+    pipeline {
+        agent {
+            node {
+                label ""
+            }
         }
-        postscript()
+        stages {
+            stage("Hello World") {
+                steps {
+                    script {
+                        sh """
+                            echo Hello
+                        """
+                    }
+                    postHelloScript()
+                }
+            }
+        }
     }
 }
 
