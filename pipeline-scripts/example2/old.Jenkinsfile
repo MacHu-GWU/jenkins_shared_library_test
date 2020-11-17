@@ -41,5 +41,14 @@ pipeline {
                 }
             }
         }
+        stage("post deploy") {
+            steps {
+                script {
+                    sh """
+                        echo "post deploy"
+                    """
+                }
+            }
+        }
     }
 }
