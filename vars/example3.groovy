@@ -5,7 +5,7 @@ def call(Closure postscript) {
                 echo Hello
             """
         }
+        postscript()
     }
-    postscript()
 }
 
