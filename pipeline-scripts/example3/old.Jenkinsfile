@@ -12,9 +12,13 @@ pipeline {
                         echo Hello
                     """
                 }
+            }
+        }
+        stage("Post Hello") {
+            steps {
                 script {
                     sh """
-                        echo end
+                        echo post hello
                     """
                 }
             }

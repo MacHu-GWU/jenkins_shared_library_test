@@ -13,9 +13,9 @@ def call(Closure postHelloScript) {
                             echo Hello
                         """
                     }
-                    postHelloScript()
                 }
             }
+            postHelloScript()
         }
     }
 }

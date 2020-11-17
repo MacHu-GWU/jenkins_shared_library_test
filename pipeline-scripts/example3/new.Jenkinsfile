@@ -1,7 +1,11 @@
 example3 {
-    script {
-        sh """
-            echo end
-        """
+    stage("Post Hello") {
+        steps {
+            script {
+                sh """
+                    echo post hello
+                """
+            }
+        }
     }
 }
